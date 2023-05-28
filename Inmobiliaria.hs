@@ -29,12 +29,7 @@ busquedas :: [Busqueda]
 }
 
 ordenarSegun _ [] = []
-ordenarSegun criterio (x:xs) =
-(ordenarSegun criterio . filter (not .
-criterio x)) xs ++
-[x] ++
-(ordenarSegun criterio . filter
-(criterio x)) xs
+ordenarSegun criterio (x:xs) = (ordenarSegun criterio . filter (not . criterio x)) xs ++ [x] ++ (ordenarSegun criterio . filter (criterio x)) xs
 
 between cotaInferior cotaSuperior valor = valor <= cotaSuperior && valor >= cotaInferior
 
