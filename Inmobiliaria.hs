@@ -9,7 +9,7 @@ Por eso surge una nueva página para buscar departamentos que permita al usuario
 sus propias búsquedas y de paso eventualmente mandarle mails con las nuevas ofertas inmobiliarias
 que podrían ser de su interés a ver si agarra viaje.
 
-Tenemos los departamentos modelados de la siguiente forma: -}
+Tenemos los departamentos modelados de la siguiente forma:  -}
 
 type Barrio = String
 type Mail = String
